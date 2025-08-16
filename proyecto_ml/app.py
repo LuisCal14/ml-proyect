@@ -5,7 +5,7 @@ import dill
 # ==============================
 # Cargar modelo entrenado
 # ==============================
-with open("RandomForest_dill.pkl","rb") as f:
+with open("proyecto_ml/RandomForest_dill.pkl","rb") as f:
     model = dill.load(f)
 
 # Orden de columnas que el modelo espera
@@ -93,3 +93,4 @@ if st.button("Predecir"):
         st.error("⚠️ Riesgo de enfermedad cardíaca")
     else:
         st.success("✅ Sin riesgo")
+
